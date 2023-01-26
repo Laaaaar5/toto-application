@@ -6,61 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>TODO App</title>
+    <title>TOTO App</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1>Todo App</h1>
     </header>
     <main class="main">
-        <section id="firstSection">
-            <form action="">
-                <label for="inputText">Get sh*t done!</label>
-                <input id="inputText" type="text">
-            </form>
-            <form action="">
-                <button id="addBtn"></button>
-                <label for="addBtn">Add</label>
-            </form>
-        </section>
+        <form id="firstSection">
+            <input id="inputText" type="text" placeholder="Get sh*t done!">
+            <button id="addBtn">Add</button>
+        </form>
         <section id="secondSection">
             <h2>Filter & Options</h2>
-            <div id="divSecondSection">
-                <form action="">
-                    <input type="radio" id="radioBtnAll">
+            <ul id="divSecondSection">
+                <li>
+                    <input type="radio" id="radioBtnAll" checked>
                     <label for="radioBtnAll">All</label>
-                </form>
-                <form action="">
+                </li>
+                <li>
                     <input type="radio" id="radioBtnOpen">
                     <label for="radioBtnOpen">Open</label>
-                </form>
-                <form action="">
+                </li>
+                <li>
                     <input type="radio" id="radioBtnDone">
                     <label for="radioBtnDone">Done</label>
-                </form>
-            </div>
-            <form action="">
-                <button id="removeBtn"></button>
-                <label for="removeBtn">Remove Done Todos</label>
-            </form>
+                </li>
+            </ul>
+            <button id="removeBtn">Remove Done Todos</button>
         </section>
         <section id="thirdSection">
             <h2>Your Todos</h2>
-            <div id="divThirdSection">
-                <form action="">
-                    <input type="checkbox" id="cBHtml">
-                    <label for="cBHtml">Learn HTML</label>
-                </form>
-                <form action="">
-                    <input type="checkbox" id="cBCss">
-                    <label for="cBCss">Learn CSS</label>
-                </form>
-                <form action="">
-                    <input type="checkbox" id="cBJs">
-                    <label for="cBJs">Learn JavaScript</label>
-                </form>
-            </div>
+            <form id="divThirdSection">
+                <ul id="todoTaskList">
+                    <li class="litodo">
+                        <input type="checkbox" id="cBHtml">
+                        <label for="cBHtml">Learn HTML</label>
+                    </li>
+                    <li class="litodo">
+                        <input type="checkbox" id="cBCss">
+                        <label for="cBCss">Learn CSS</label>
+                    </li>
+                    <li class="litodo">
+                        <input type="checkbox" id="cBJs">
+                        <label for="cBJs">Learn JavaScript</label>
+                    </li>
+
+                </ul>
+            </form>
         </section>
     </main>
 

@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: sans-serif;
+  --color-dark-blue: #073b4c;
+  --color-light-blue: #118ab2;
+  --color-green: #06d6a0;
+  --color-yellow: #f5ab00;
+  --color-pink: #ef476f;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+#header {
+  color: white;
+  background-color: var(--color-pink);
+  text-shadow: 2px 2px var(--light-blue), 4px 4px var(--yellow);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.main {
+  max-width: 35ch;
+  margin: auto;
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+h2 {
+  display: block;
+  font-size: 1rem;
+  width: auto;
+  margin-block-start: 0, 83rem;
+  margin-inline-end: 0.83rem;
+  margin-bottom: 0;
+}
+
+body {
+  display: block;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+#inputText {
+  width: auto;
+  background-color: white;
+  padding: 0.5em;
+  border: 0.1em solid transparent;
+  border-radius: 0.3em;
+}
+
+#addBtn {
+  all: unset;
+  display: block;
+  word-break: keep-all;
+  word-wrap: normal;
+  color: white;
+  background-color: var(--color-light-blue);
+  padding: 0.25em 0.4em;
+  border-radius: 0.3em;
+  border: 0.1em solid transparent;
+  box-shadow: 3px 3px 0px var(--color-pink);
+  margin-inline: 1rem;
+}
+
+#removeBtn {
+  all: unset;
+  word-break: keep-all;
+  word-wrap: normal;
+  color: white;
+  background-color: var(--color-light-blue);
+  padding: 0.25em 0.4em;
+  border-radius: 0.3em;
+  border: 0.1em solid transparent;
+  box-shadow: 3px 3px 0px var(--color-pink);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#firstSection {
+  display: flex;
+  margin-top: 0;
+}
+
+#secondSection {
+  display: block;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#divSecondSection {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+main {
+  padding: 10rem;
+}
+
+#thirdSection {
+  display: block;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#todoTaskList {
+  display: block;
+  row-gap: 2rem;
+}
+
+.litodo {
+  background-color: white;
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+  width: 270px;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
